@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+Oriya:wght@400..700&family=Pacifico&family=Poppins:wght@400;500;700&family=Sixtyfour+Convergence&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* !CREATE EMPLOYEE */
+/* Container */
+.form-container {
+  width: 800px;
+  height:600px ;
+  margin:40px  auto;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 50px;
+  border-radius: 20px;
+  background:rgb(69, 97, 181);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.8s ease-in-out;
+
+}
+fieldset{
+  border: 2px solid black;
+  padding: 10px;
+}
+
+/* Animation for smooth entry */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form layout */
+.form-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid black;
+}
+
+/* Labels */
+.form-container label {
+  font-weight:400;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+/* Inputs */
+.form-container [type="text"],
+.form-container [type="email"],
+.form-container [type="date"],
+.form-container [type="file"] {
+  padding: 5px;
+  border: 1px solid #0a0a0a;
+  border-radius: 3px;
+  font-size: 15px;
+  outline: none; 
+  /* transition: 0.3s;   */
+  background: rgba(251, 247, 247, 0.9);
+}
+
+.form-container input:focus {
+  border-color: #ff6f91;
+  box-shadow: 0 0 10px rgba(255, 111, 145, 0.5);
+  background: #fff;
+}
+
+/* Submit button */
+.form-button {
+  margin-top: 20px;
+  margin-left: 50%;
+  background:rgb(252, 250, 251);
+  color:black;
+  padding:2px  15px;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  cursor: pointer;
+  /* transition: transform 0.2s, box-shadow 0.3s; */
+}
+
+.form-button:hover {
+  border: 2px solid rgb(18, 17, 17);
+  color: #0072ff;
+  /* transform: translateY(-2px); */
+  /* box-shadow: 10px 6px 15px rgba(72, 71, 71, 0.5); */
+}
+
+/* Home button */
+.home-button {
+  margin-top: 25px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.home-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 114, 255, 0.5);
+}
+.form-container h2{
+  margin-left: 30%;
+  color: white;
+}
+
+
+/* ! HOME */
+
+/* General Page Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+#home_page {
+  min-height: 100vh;
+  background: #df9926;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar styling */
+#home_page nav {
+  background:#337ab7;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#home_page nav h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#home_page nav button {
+  background: #facc15;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#home_page nav button:hover {
+  background: #eab308;
+  transform: scale(1.05);
+}
+
+/* Main content grid */
+#home_page main {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Employee card */
+#home_page article {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+#home_page article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+#home_page article h1 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  color: #1e3a8a;
+}
+
+#home_page article h2 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #334155;
+}
+
+#home_page article p {
+  font-size: 0.95rem;
+  color: #475569;
+  margin: 0.2rem 0;
+}
+
+#home_page article img {
+  margin: 1rem 0;
+  border-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 200px;
+  height:200px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons inside card */
+#home_page article button {
+  background: #eb7725;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  margin: 0.3rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+#home_page article button:hover {
+  background: #1d4ed8;
+}
+
+/* Different button colors */
+#home_page article button:nth-child(1) {
+  background: #3b82f6;
+}
+#home_page article button:nth-child(1):hover {
+  background: #1d4ed8;
+}
+
+#home_page article button:nth-child(2) {
+  background: #10b981;
+}
+#home_page article button:nth-child(2):hover {
+  background: #059669;
+}
+
+#home_page article button:nth-child(3) {
+  background: #ef4444;
+}
+#home_page article button:nth-child(3):hover {
+  background: #dc2626;
+}
+
+/* !view employee */
+.view-employee {
+  font-family: Arial, sans-serif;
+  background: #f9f6f9;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.view-employee .card {
+  background: rgb(150, 34, 158);
+  padding: 40px 50px;   /* bigger padding */
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  text-align: center;
+  max-width: 600px;     /* bigger width */
+  width: 100%;
+  transform: scale(1.05);  /* slight enlargement */
+}
+
+.view-employee .card h1 {
+  color:white;
+  font-size: 2.5rem;   /* bigger heading */
+  margin-bottom: 15px;
+}
+
+.view-employee .card h2 {
+  color: white;
+  font-size: 1.8rem;   /* bigger subheading */
+  margin: 20px 0;
+}
+
+.view-employee .card p {
+  color: white;
+  margin: 10px 0;
+  font-size: 1.2rem;   /* bigger text */
+}
+.view-employee .card h3 {
+  color: white;
+  margin: 10px 0;
+  font-size: 1.8rem;   /* bigger text */
+}
+
+.view-employee .card img {
+  border-radius: 15%;
+  margin-top: 20px;
+  border: 0px solid #030303;
+  height: 250px;   /* bigger image */
+  width: 250px;    /* bigger image */
+}
+.view-employee .card button{
+  margin-top: 20px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: royalblue;
+  color: white;
+  font-weight: 500;
+}
+.view-employee .card button:hover{
+  transform: scale(1.05);
+  border: 1px solid white;
+}
+
+/* ! UPDATE FILE */
+/* ---------- Container ---------- */
+.update-form {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 35px 40px;
+  background:#df9926 ;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 0.6s ease;
+}
+
+/* ---------- Title ---------- */
+.update-form legend {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c2c2c;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Labels ---------- */
+.update-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* ---------- Inputs ---------- */
+.update-form input[type="text"],
+.update-form input[type="email"],
+.update-form input[type="date"],
+.update-form input[type="file"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  background: #ffffff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.update-form input:focus {
+  border: 2px solid #ff7eb3;
+  box-shadow: 0 0 10px rgba(255, 126, 179, 0.5);
+  outline: none;
+}
+
+/* ---------- Submit Button ---------- */
+.update-form input[type="submit"] {
+  width: 30%;
+  padding: 14px;
+  background:#10b981 ;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.update-form input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(255, 118, 140, 0.4);
+}
+
+/* ---------- Back Button ---------- */
+.update-form button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background:#0f9ffa;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.update-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(56, 249, 215, 0.4);
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
